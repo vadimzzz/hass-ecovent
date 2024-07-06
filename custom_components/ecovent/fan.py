@@ -173,6 +173,7 @@ class EcoVentFan(FanEntity):
     filters = {0: "filter replacement not required", 1: "replace filter"}
 
     unit_types = {
+        0x0006: "Smart Wi-Fi"
         0x0300: "Vento Expert A50-1/A85-1/A100-1 W V.2",
         0x0400: "Vento Expert Duo A30-1 W V.2",
         0x0500: "Vento Expert A30 W V.2",
