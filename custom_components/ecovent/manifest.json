@@ -8,5 +8,6 @@
     "dependencies": [],
     "config_flow": false,
     "codeowners": ["@49jan"],
-    "iot_class": "local_polling"
+    "iot_class": "local_polling",
+    "loggers": ["custom_components.ecovent"]
   }
