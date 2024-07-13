@@ -396,21 +396,21 @@ class EcoVentFan(FanEntity):
         """Return optional state attributes."""
         data: dict[str, float | str | None] = self.state_attributes
 
-        data[ATTR_AIRFLOW_MODES] = self.airflows
+        # data[ATTR_AIRFLOW_MODES] = self.airflows
         data["device_id"] = self.id
-        data[ATTR_UNIT_TYPE] = self.unit_type
+        # data[ATTR_UNIT_TYPE] = self.unit_type
 
-        data[ATTR_AIRFLOW] = self.airflow
-        data[ATTR_HUMIDITY] = self.humidity
+        # data[ATTR_AIRFLOW] = self.airflow
+        # data[ATTR_HUMIDITY] = self.humidity
 
-        data[ATTR_HUMIDITY_SENSOR_STATUS] = self.humidity_status
-        data[ATTR_HUMIDITY_SENSOR_TRESHOLD] = self.humidity_treshold
+        # data[ATTR_HUMIDITY_SENSOR_STATUS] = self.humidity_status
+        # data[ATTR_HUMIDITY_SENSOR_TRESHOLD] = self.humidity_treshold
 
         # data["night_mode_timer"] = self.night_mode_timer
 
-        data[ATTR_FILTER_REPLACEMENT_STATUS] = self.filter_replacement_status
-        data[ATTR_FILTER_TIMER_COUNTDOWN] = self.filter_timer_countdown
-        data[ATTR_MACHINE_HOURS] = self.machine_hours
+        # data[ATTR_FILTER_REPLACEMENT_STATUS] = self.filter_replacement_status
+        # data[ATTR_FILTER_TIMER_COUNTDOWN] = self.filter_timer_countdown
+        # data[ATTR_MACHINE_HOURS] = self.machine_hours
 
         return data
 
